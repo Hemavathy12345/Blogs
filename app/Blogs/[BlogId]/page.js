@@ -2,12 +2,9 @@
 import './page.css';
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
-const Blogs = () => {
-  const params = useParams();
-  const [blog, setBlog] = useState(null);
-
-  const hardcodedBlogs =[
+const hardcodedBlogs = [
   {
     "id": 1,
     "name": "Peacock Feather",
@@ -58,8 +55,11 @@ const Blogs = () => {
     "name": "Sports Bike",
     "description": "A white sports bike parked on rugged terrain under a clear sky, with 'iamabiker.com' watermark."
   }
-]
+];
 
+const Blogs = () => {
+  const params = useParams();
+  const [blog, setBlog] = useState(null);
 
   useEffect(() => {
     const blogId = Number(params.BlogId);
@@ -68,7 +68,6 @@ const Blogs = () => {
       const savedBlogs = JSON.parse(localStorage.getItem("blogs") || "[]");
       found = savedBlogs.find(b => b.id === blogId);
     }
-
     setBlog(found);
   }, [params.BlogId]);
 
@@ -76,8 +75,15 @@ const Blogs = () => {
 
   return (
     <div className="description">
-      <div className="box"> <h1>{blog.name}</h1>
-        <img src={blog.imageUrl ? blog.imageUrl : `/img-${blog.id}.jpg`} alt={blog.name} className="blogimg1" />
+      <div className="box">
+        <h1>{blog.name}</h1>
+        <Image
+          src={blog.imageUrl ? blog.imageUrl : `/img-${blog.id}.jpg`}
+          alt={blog.name}
+          className="blogimg1"
+          width={600}
+          height={400}
+        />
         <p>{blog.description}</p>
       </div>
     </div>
