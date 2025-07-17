@@ -1,11 +1,12 @@
 import '@/styles/navbar.css'
+import Link from 'next/link'
 const navbar = () => {
     return (
         <div className='navbar'>
             <ol>
                 <div className='bar'>
-                    <li><a href="/">Admin</a></li>
-                    <li><a href="/ulogin">User</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/ulogin">User</Link></li>
                 </div>
             </ol>
         </div>

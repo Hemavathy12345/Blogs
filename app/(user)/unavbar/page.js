@@ -1,15 +1,16 @@
 import '@/styles/unavbar.css';
+import Link from 'next/link';
 const unavbar = () => {
     return (
         <>
             <div>
                 <ol>
                     <div className='bar'>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#create">Profile</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#logout">Logout</a></li>
+                        <li><Link href="#home">Home</Link></li>
+                        <li><Link href="#create">Profile</Link></li>
+                        <li><Link href="#about">About</Link></li>
+                        <li><Link href="#contact">Contact</Link></li>
+                        <li><Link href="#logout">Logout</Link></li>
                     </div>
                 </ol>
             </div>
