@@ -1,0 +1,40 @@
+.description{
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    color: black;
+    padding-bottom: 300px;
+}
+.blogimg1{
+    height: 300px;
+    border-radius: 11px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+h1{
+    padding-top: 40px;
+}
+img{
+    height: 400px;
+    width: 400px;
+    border-radius: 11px;
+}
+.content{
+    padding: 20px;
+   justify-content: space-evenly;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   background-color: white;
+   color: black;
+}
+.content , .box{
+    padding: 20px;
+    border-radius: 11px;
+    background-color: rgb(183, 183, 238);
+    padding-top: 10px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    opacity: 0.9;
+}

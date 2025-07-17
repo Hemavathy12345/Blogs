@@ -1,0 +1,28 @@
+
+.bar{
+    display: flex;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    flex-direction: row;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding-top: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  background-color: rgb(0, 0, 0);
+}
+li{
+    list-style: none;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+li:hover{
+    background-color: rgb(105, 238, 255);
+    color: rgb(255, 255, 255);
+}
