@@ -5,7 +5,7 @@ const navbar = () => {
         <div className='navbar'>
             <ol>
                 <div className='bar'>
-                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/">Admin</Link></li>
                     <li><Link href="/ulogin">User</Link></li>
                 </div>
             </ol>

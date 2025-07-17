@@ -55,17 +55,14 @@ const hardcodedBlogs = [
     "description": "A white sports bike parked on rugged terrain under a clear sky, with 'iamabiker.com' watermark."
   }
 ];
-
 const Blogs = () => {
   const router = useRouter();
   const [allBlogs, setAllBlogs] = useState([]);
-
   useEffect(() => {
     const userBlogs = JSON.parse(localStorage.getItem("blogs") || "[]");
     const mergedBlogs = [...hardcodedBlogs, ...userBlogs];
     setAllBlogs(mergedBlogs);
   }, []);
-
   return (
     <div className="displayimg">
       <h1>All Blogs</h1>
