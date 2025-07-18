@@ -1,5 +1,5 @@
 "use client"
-import '@/styles/login.css'
+import '@/styles/ulogin.css'
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 const Login = () => {
